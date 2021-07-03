@@ -1,21 +1,24 @@
 body {
-  background-color: whitesmoke;
-  max-width: 1440px;
+  background-color: hsl(210, 46%, 95%);
+  margin: auto;
+  margin-top: 3rem;
+  max-width: 1575px;
 }
 
 .container {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr 1fr;
   grid-template-rows: 1fr 1fr;
-  gap: 2em 2em;
+  gap: 2.7em 2.7em;
   grid-auto-flow: row;
   grid-template-areas:
     "daniel daniel jon kira"
     "jean patrick patrick kira";
 }
 .card {
-  padding: 2rem;
+  padding: 2.5rem;
   border-radius: 10px;
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
 }
 .daniel {
   grid-area: daniel;
@@ -47,26 +50,159 @@ body {
 .card {
   font-family: "Barlow Semi Condensed", sans-serif;
 }
+.iconContainer {
+  display: flex;
+}
+
+.iconContainer img {
+  margin-right: 1.2rem;
+  border-radius: 50%;
+  height: 40px;
+}
 
 .daniel > h1 {
   color: white;
+  font-size: 28px;
+}
+
+.daniel > h1::after {
+}
+
+.daniel h2 {
+  color: rgba(255, 255, 255, 0.803);
+  font-size: 18px;
+  display: inline;
+  margin: 0;
+}
+
+.daniel h2::after {
+  content: "Verified Graduate";
+  color: hsla(0, 0%, 100%, 0.5);
+  font-size: 16px;
+  display: block;
 }
 
 .daniel > p {
   color: hsl(263, 55%, 70%);
-  font-size: 13px;
+  font-size: 19px;
+  line-height: 25px;
 }
 
-.jon {
+.jon img {
+  margin-right: 1.2rem;
+  border-radius: 50%;
+  height: 40px;
+}
+
+.jon > h1 {
   color: white;
+  font-size: 28px;
 }
 
-.kira {
+.jon h2 {
+  color: rgba(255, 255, 255, 0.803);
+  font-size: 18px;
+  display: inline;
+  margin: 0;
 }
 
-.patrick {
+.jon h2::after {
+  content: "Verified Graduate";
+  color: hsla(0, 0%, 100%, 0.5);
+  font-size: 16px;
+  display: block;
+}
+
+.jon > p {
+  color: hsla(0, 0%, 85%, 0.557);
+  font-size: 19px;
+  line-height: 25px;
+}
+
+.kira img {
+  margin-right: 1.2rem;
+  border-radius: 50%;
+  height: 40px;
+}
+.kira > h1 {
+  color: rgba(36, 36, 36, 0.79);
+  font-size: 28px;
+}
+
+.kira h2 {
+  color: rgba(36, 36, 36, 0.79);
+  font-size: 18px;
+  display: inline;
+  margin: 0;
+}
+
+.kira h2::after {
+  content: "Verified Graduate";
+  color: rgba(36, 36, 36, 0.534);
+  font-size: 16px;
+  display: block;
+}
+.kira > p {
+  color: rgba(36, 36, 36, 0.534);
+  font-size: 19px;
+  line-height: 25px;
+}
+
+.patrick img {
+  margin-right: 1.2rem;
+  border-radius: 50%;
+  height: 40px;
+}
+.patrick > h1 {
   color: white;
+  font-size: 28px;
 }
 
-.jean {
+.patrick h2 {
+  color: rgba(255, 255, 255, 0.803);
+  font-size: 18px;
+  display: inline;
+  margin: 0;
+}
+
+.patrick h2::after {
+  content: "Verified Graduate";
+  color: hsla(0, 0%, 100%, 0.5);
+  font-size: 16px;
+  display: block;
+}
+
+.patrick > p {
+  color: hsla(0, 0%, 85%, 0.557);
+  font-size: 19px;
+  line-height: 25px;
+}
+
+.jean img {
+  margin-right: 1.2rem;
+  border-radius: 50%;
+  height: 40px;
+}
+.jean > h1 {
+  color: rgba(36, 36, 36, 0.79);
+  font-size: 29px;
+}
+
+.jean h2 {
+  color: rgba(36, 36, 36, 0.79);
+  font-size: 18px;
+  display: inline;
+  margin: 0;
+}
+
+.jean h2::after {
+  content: "Verified Graduate";
+  color: rgba(36, 36, 36, 0.534);
+  font-size: 16px;
+  display: block;
+}
+.jean > p {
+  color: rgba(36, 36, 36, 0.534);
+  font-size: 19px;
+  line-height: 25px;
 }
