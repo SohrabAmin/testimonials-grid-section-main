@@ -1,0 +1,39 @@
+body {
+  background-color: whitesmoke;
+}
+
+.container {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+  gap: 2em 2em;
+  grid-auto-flow: row;
+  grid-template-areas:
+    "daniel daniel jon kira"
+    "jean patrick patrick kira";
+}
+
+.daniel {
+  grid-area: daniel;
+  background-color: hsl(263, 55%, 52%);
+}
+
+.jon {
+  grid-area: jon;
+  background-color: hsl(217, 19%, 35%);
+}
+
+.kira {
+  grid-area: kira;
+  background-color: hsl(0, 0%, 100%);
+}
+
+.patrick {
+  grid-area: patrick;
+  background-color: hsl(219, 29%, 14%);
+}
+
+.jean {
+  grid-area: jean;
+  background-color: hsl(0, 0%, 100%);
+}
