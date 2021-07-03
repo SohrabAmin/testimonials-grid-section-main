@@ -1,5 +1,6 @@
 body {
   background-color: whitesmoke;
+  max-width: 1440px;
 }
 
 .container {
@@ -12,7 +13,10 @@ body {
     "daniel daniel jon kira"
     "jean patrick patrick kira";
 }
-
+.card {
+  padding: 2rem;
+  border-radius: 10px;
+}
 .daniel {
   grid-area: daniel;
   background-color: hsl(263, 55%, 52%);
@@ -36,4 +40,33 @@ body {
 .jean {
   grid-area: jean;
   background-color: hsl(0, 0%, 100%);
+}
+
+/* TYPOGRAPHY */
+
+.card {
+  font-family: "Barlow Semi Condensed", sans-serif;
+}
+
+.daniel > h1 {
+  color: white;
+}
+
+.daniel > p {
+  color: hsl(263, 55%, 70%);
+  font-size: 13px;
+}
+
+.jon {
+  color: white;
+}
+
+.kira {
+}
+
+.patrick {
+  color: white;
+}
+
+.jean {
 }
